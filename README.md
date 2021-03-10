@@ -17,12 +17,17 @@
 
 ## Tecnologias
 
-- [React](https://pt-br.reactjs.org/)
-- [Styled Components](https://styled-components.com/)
+- [Express](https://expressjs.com/)
+- [TypeORM](https://typeorm.io/)
+- [PostgreSQL](https://www.postgresql.org/)
+- [MongoDB](https://www.mongodb.com/)
+- [Redis](https://redis.io/)
+- [JWT](https://jwt.io/)
 - [Axios](https://github.com/axios/axios)
 - [Yup](https://github.com/jquense/yup)
 - [Date-fns](https://date-fns.org/)
-- [Unform](https://unform.dev/)
+- [Nodemailer](https://nodemailer.com/)
+- [Docker](https://www.docker.com/)
 
 ## Projeto
 
@@ -32,13 +37,18 @@ GoBarber é uma plataforma em que clientes podem marcar horários com seu cabele
 
 Clone o repositório e faça a instalação dos pacotes do projeto
 ```
-$ git clone https://github.com/Jeronymoo/gobarber-react.git
-$ cd gobarber-react-native
+$ git clone https://github.com/Jeronymoo/gobarber-nodejs.git
+$ cd gobarber-nodejs
 $ yarn
+ou
+$ npm install
 ```
-Com o <a href=https://developer.android.com/studio>android studio</a> instalado, configurado e com o <a href=#>back-end</a> rodando inicie o projeto
+Faça a instalação do <a href="#">Docker</a> e crie imagens para o banco de dados PostgreSQL, MongoDB e para o Redis. Lembre-se de alterar os campos especificados no arquvivo disponibilizado ormconfig.json.example, renomeando para ormconfig.json
+
+Após de estar com o Docker e as imagens dos bancos de dados rodando faça a criação das tabelas
 ```
-$ yarn start
+# Testando
+$ yarn typeorm migration:run
 ```
 
 ## Licença
